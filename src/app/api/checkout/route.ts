@@ -5,7 +5,7 @@ import Order from '@/models/Order';
 import { verifyToken } from '@/lib/auth';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2023-10-16',
+  apiVersion: '2026-01-28.clover',
 });
 
 export async function POST(request: NextRequest) {
